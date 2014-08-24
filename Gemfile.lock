@@ -24,7 +24,6 @@ GEM
     minitest (5.4.0)
     multi_json (1.10.1)
     mysql2 (0.3.16)
-    pg (0.17.1)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
@@ -59,9 +58,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord
   mysql2
-  pg
   sinatra
   sinatra-activerecord
   sinatra-reloader
