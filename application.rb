@@ -1,9 +1,9 @@
 configure :development, :production do |config|
-  config.also_reload "models/*.rb"
-  config.also_reload "helpers/*.rb"
-  config.also_reload "lib/*.rb"
   config.also_reload "config/*.rb"
   config.also_reload "controllers/*.rb"
+  config.also_reload "helpers/*.rb"
+  config.also_reload "lib/*.rb"
+  config.also_reload "models/*.rb"
   config.also_reload "public/*.rb"
   config.also_reload "views/*.rb"
 end
