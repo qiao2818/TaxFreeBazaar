@@ -1,4 +1,3 @@
 get '/' do
-  puts "============================="
-  AdminUser.first().to_json
+  AdminUser.all.to_json
 end
