@@ -14,6 +14,8 @@ post '/index' do
   # 翻译
   translate_result = EasyTranslate.translate([slug,title,desc,keywords,meta,title_tag],:to=>support_lang)
 
+  puts translate_result
+
   # 组织相应参数
   slug = translate_result[0]
   title = translate_result[1]
