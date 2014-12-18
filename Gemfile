@@ -8,3 +8,7 @@ gem "sinatra-activerecord"
 #gem "pg"
 gem "mysql2"
 gem "sinatra-reloader"
+
+gem 'sinatra-jsonp'
+
+gem 'easy_translate'
