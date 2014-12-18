@@ -17,12 +17,12 @@ post '/index' do
   puts translate_result
 
   # 组织相应参数
-  slug = translate_result[0]
-  title = translate_result[1]
-  desc = translate_result[2]
-  keywords = translate_result[3]
-  meta = translate_result[4]
-  title_tag = translate_result[5]
+  res_slug = translate_result[0]
+  res_title = translate_result[1]
+  res_desc = translate_result[2]
+  res_keywords = translate_result[3]
+  res_meta = translate_result[4]
+  res_title_tag = translate_result[5]
 
-  return {'slug'=>slug,'title'=>title,'desc'=>desc,'keywords'=>keywords,'meta'=>meta,'title_tag'=>title_tag}.to_json
+  return {'slug'=>res_slug,'title'=>res_title,'desc'=>res_desc,'keywords'=>res_keywords,'meta'=>res_meta,'title_tag'=>res_title_tag}.to_json
 end
