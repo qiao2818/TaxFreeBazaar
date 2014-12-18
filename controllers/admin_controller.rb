@@ -24,5 +24,7 @@ post '/index' do
   res_meta = translate_result[4]
   res_title_tag = translate_result[5]
 
-  return {'slug'=>res_slug,'title'=>res_title,'desc'=>res_desc,'keywords'=>res_keywords,'meta'=>res_meta,'title_tag'=>res_title_tag}.to_json
+  hash = {'slug'=>res_slug,'title'=>res_title,'desc'=>res_desc,'keywords'=>res_keywords,'meta'=>res_meta,'title_tag'=>res_title_tag}.to_json
+  puts hash
+  return hash
 end
