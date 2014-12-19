@@ -10,6 +10,7 @@ post '/translate' do
   meta = params[:meta]
   title_tag = params[:title_tag]
   support_lang = params[:to]
+  apartment_id = params[:apartment_id]
 
   # 翻译
   translate_result = EasyTranslate.translate([slug,title,desc,keywords,meta,title_tag],:to=>support_lang)
@@ -25,7 +26,7 @@ post '/translate' do
   res_title_tag = translate_result[5]
 
   tr = Translate.new
-  tr.apartment_id = 1000
+  tr.apartment_id = apartment_id
   tr.locale = support_lang
   tr.result = translate_result.to_s
   tr.save
