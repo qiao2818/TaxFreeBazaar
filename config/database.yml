@@ -1,29 +1,39 @@
-development:
+default_env: &default
   adapter: mysql2
   encoding: utf8
   reconnect: false
   pool: 5
-  database: taxfreebazaar_development
+  database: zunest_service
   username: root
   password: root
   host: localhost
 
-production:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  pool: 5
-  database: taxfreebazaar_production
-  username: root
-  password: root
-  host: localhost
-
-test:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  pool: 5
-  database: taxfreebazaar_test
-  username: root
-  password: root
-  host: localhost
+#development:
+#  adapter: mysql2
+#  encoding: utf8
+#  reconnect: false
+#  pool: 5
+#  database: zunest_service
+#  username: root
+#  password: root
+#  host: localhost
+#
+#production: &production
+#  adapter: mysql2
+#  encoding: utf8
+#  reconnect: false
+#  pool: 5
+#  database: zunest_service
+#  username: root
+#  password: root
+#  host: localhost
+#
+#test:
+#  adapter: mysql2
+#  encoding: utf8
+#  reconnect: false
+#  pool: 5
+#  database: zunest_service
+#  username: root
+#  password: root
+#  host: localhost
