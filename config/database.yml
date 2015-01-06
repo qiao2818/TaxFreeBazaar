@@ -19,7 +19,7 @@ development:
   password: root
   host: localhost
   socket: /tmp/mysql.sock
-#
+  
 #production: &production
 #  adapter: mysql2
 #  encoding: utf8
