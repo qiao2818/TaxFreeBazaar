@@ -25,6 +25,7 @@ post '/translate' do
   res_meta = translate_result[4]
   res_title_tag = translate_result[5]
 
+  # 数据库写入
   tr = Translate.new
   tr.apartment_id = apartment_id
   tr.locale = support_lang

@@ -6,6 +6,11 @@ configure :development, :production do |config|
   config.also_reload "models/*.rb"
   config.also_reload "public/*.rb"
   config.also_reload "views/*.rb"
+
+  enable :logging
+  file = File.new("#{settings.root}/log/#{settings.environment}.log", 'a+')
+  file.sync = true
+  use Rack::CommonLogger, file
 end
 
 %w{models controllers lib helpers}.each do |dir|

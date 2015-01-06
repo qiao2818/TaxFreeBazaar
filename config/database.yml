@@ -7,16 +7,18 @@ default_env: &default
   username: root
   password: root
   host: localhost
+  socket: /tmp/mysql.sock
 
-#development:
-#  adapter: mysql2
-#  encoding: utf8
-#  reconnect: false
-#  pool: 5
-#  database: zunest_service
-#  username: root
-#  password: root
-#  host: localhost
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  database: zunest_service
+  username: root
+  password: root
+  host: localhost
+  socket: /tmp/mysql.sock
 #
 #production: &production
 #  adapter: mysql2
